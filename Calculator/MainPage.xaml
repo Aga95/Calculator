@@ -1,0 +1,284 @@
+﻿<Page
+    x:Class="Calculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="525.25" Width="350.5">
+
+    <Grid Background="#FF1B1A1A" Margin="0,0,0,0">
+        <Button Name="btDecimal" Content="." Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="10,435,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btZero" Content="0" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="93,435,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btEqual" Content="=" Background="#4ec167" Foreground="White" HorizontalAlignment="Left" Margin="176,435,0,0" VerticalAlignment="Top" Width="164" Height="81" FontSize="30" Click="EqualOperator">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FF68EE85"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FF68EE85"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btOne" Content="1" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="10,352,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btTwo" Content="2" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="93,352,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btThree" Content="3" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="176,352,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btDivide" Content="÷" Background="#547bc5" Foreground="White" HorizontalAlignment="Left" Margin="259,352,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="OperatorReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btFour" Content="4" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btFive" Content="5" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="93,269,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btSix" Content="6" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="176,269,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btMultiply" Content="*" Background="#547bc5" Foreground="White" HorizontalAlignment="Left" Margin="259,269,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="OperatorReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btSeven" Content="7" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btEight" Content="8" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="93,186,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btNine" Content="9" Background="#737475" Foreground="White" HorizontalAlignment="Left" Margin="176,186,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="NumberReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btSubtract" Content="-" Background="#547bc5" Foreground="White" HorizontalAlignment="Left" Margin="259,186,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="OperatorReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btReset" Content="Reset" Background="#afadad" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="122.5" Height="81" FontSize="30" Click="ResetCalculator">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btBack" Content="Back" Background="#afadad" HorizontalAlignment="Left" Margin="135,103,0,0" VerticalAlignment="Top" Width="122" Height="81" FontSize="30" Click="DeleteLastEntered">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FFE4E4E4"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Name="btAdd" Content="+" Background="#547bc5" Foreground="White" HorizontalAlignment="Left" Margin="259,103,0,0" VerticalAlignment="Top" Width="81" Height="81" FontSize="30" Click="OperatorReciever">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FF89B2FF"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <TextBox Name="tbInput" HorizontalAlignment="Left" Margin="8,56,0,0" Text="" VerticalAlignment="Top" Width="334" Height="47" FontWeight="Normal" FontSize="25" TextAlignment="Right" Background="#66FFFFFF"/>
+        <TextBlock Name="tbOutput" HorizontalAlignment="Left" Margin="8,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI" Foreground="#FFCBCBCB" Width="334" Height="46" FontSize="25"/>
+    </Grid>
+</Page>
