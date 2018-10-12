@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Aga\Desktop\Facial Recog\Calculator\Calculator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-11T01:20:41.572</Modified>
+      <Modified>2018-10-12T14:44:40.748</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Aga\Desktop\Facial Recog\Calculator\Calculator\bin\x86\Debug\Calculator.exe">
       <PackagePath>entrypoint\Calculator.exe</PackagePath>
-      <Modified>2018-10-11T01:20:41.130</Modified>
+      <Modified>2018-10-12T14:44:40.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Aga\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="C:\Users\Aga\Desktop\Facial Recog\Calculator\Calculator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-11T00:48:22.689</Modified>
+      <Modified>2018-10-12T14:28:39.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Aga\Desktop\Facial Recog\Calculator\Calculator\bin\x86\Debug\Core\Calculator.exe">
       <PackagePath>Calculator.exe</PackagePath>
-      <Modified>2018-10-11T01:20:41.566</Modified>
+      <Modified>2018-10-12T14:44:40.745</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
