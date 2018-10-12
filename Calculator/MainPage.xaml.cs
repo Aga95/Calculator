@@ -54,7 +54,7 @@ namespace Calculator
                 tbInput.Text += "";
             }
             //The third and fourth are for regular number inputs, the tests are to make sure that the input gets deleted for the new number
-            //after pressing an operator button.
+            //after pressing an operator button and to let the user add more than one digit as well as delete the digit from before.
             else if (multipleDigits == false)
             {
                 tbInput.Text += bt.Content;
