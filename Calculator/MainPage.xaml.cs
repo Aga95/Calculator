@@ -121,6 +121,7 @@ namespace Calculator
             lastOperationPerformed = "";
         }
 
+        //Delets the last entered digit in case the user puts in the wrong input
         private void DeleteLastEntered(object sender, RoutedEventArgs e)
         {
             tbInput.Text = tbInput.Text.Substring(0, tbInput.Text.Length - 1);
@@ -147,12 +148,13 @@ namespace Calculator
                     tbOutput.Text += operationsPerformed;
                 }
                 //To correctly show the operation used in case the user changes their mind
-                if (!tbOutput.Text.EndsWith((String)bt.Content))
+                if (!tbOutput.Text.EndsWith((String)bt.Content) && (String)bt.Content != "=")
                 {
                     tbOutput.Text = tbOutput.Text.Substring(0, tbOutput.Text.Length - 1);
                     tbOutput.Text += (String)bt.Content;
                 }
                 //Four tests that calculates based on the operator used.
+                //This is to calculate properly and have order on what type of calculation needs to be done
                 if (operationsPerformed == "+")
                 {
                     resultHolder += Double.Parse(tbInput.Text);
