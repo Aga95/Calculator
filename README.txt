@@ -1,17 +1,18 @@
-This application is a calculator with basic operation, +-*/.
-It accepts negative numbers and decimals. The app is written in C# and made in Visual Studio
-with the standard blank UWP creation as it is made as an Universal Windows App.
-The .exe file doesnt run but the app is runnable with Visual Studio. Open up the .sln file and run it.
-The executable file is in bin\x86\Release and is called calculator.exe.
+This app is a calculator with the basic operations +-*/
+The app is made with Android Studio using Kotlin.
 
 
-There are certain things within code and project structures that could have been better.
-Given more time i would have researched more on MVVM and done it in that structure.
-For the code i would have improved it so as to find patterns and collect certain code
-into methods to call.
-I could also have tried to created my own UI templates and use that instead of reusing already made
-standard template within visual studio.
+I cant say im particulary proud of this version for android as much as the earlier which i made with C#.
+I came into this with a disatvantage which is never having operated within Android Studio or used Kotlin.
+I wanted to show that i can develop myself and increase my knowledge in a short period of time to
+make up for the experience that im lacking. So that would be the only thing that im proud of.
 
-I tried to implement a section where the app shows the user how to calculation is done with explanation.
-But given the timeframe i wasnt able to do so. 
-I would also make the calculator accept usage with the numpad.
+There is alot that could have been better:
+	-Better handling of errors
+	-The does its calculation well the first time, but upon reset the user has to do some operations
+	 before it works properly again(A logic mistake on my part that i cant see).
+	-The dividation operator needs one operations in between everytime you want to divide your number.
+
+Given more time i would have tried harder to fix these mistakes and find a better way to program the app.
+I would also find more out about Android Studio and programming with Kotlin.
+I would also add more complicated operations with parantheses and such.
