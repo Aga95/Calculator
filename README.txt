@@ -3,7 +3,8 @@ The app is made with Android Studio using Kotlin.
 
 
 I cant say im particulary proud of this version for android as much as the earlier which i made with C#.
-I came into this with a disatvantage which is never having operated within Android Studio or used Kotlin.
+I came into this with a disatvantage which is never having operated within Android Studio or used Kotlin, but i believe
+i crippled myself by doing so. I still wanted to show i wanted this job.
 I wanted to show that i can develop myself and increase my knowledge in a short period of time to
 make up for the experience that im lacking. So that would be the only thing that im proud of.
 
